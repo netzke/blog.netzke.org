@@ -4,10 +4,11 @@ date: 2016-01-02 11:54 UTC
 tags:
 excerpt: "With latest Netzke Core we can do better than keeping a component's state in the session."
 ---
-In a typical example of having 2 grids that handle models bound with a one-to-many relationship, we used to need an
-endpoint that would receive the id of the currently selected parent record and store it in the session, so that the next
-endpoint call that is processed by the second grid would already have that grid reconfigured for us, scoping it out to
-the record selected. It usually looked something like this:
+In a [typical example](https://www.airpair.com/javascript/posts/getting-started-with-netzke) of having 2 grids that
+handle models bound with a one-to-many relationship, we used to need an endpoint that would receive the id of the
+currently selected parent record and store it in the session, so that the next endpoint call that is processed by the
+second grid would already have that grid reconfigured for us, scoping it out to the record selected. It usually looked
+something like this:
 
 ~~~ruby
 endpoint :server_set_author do |params, this|
