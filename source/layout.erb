@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netzke Blog<%= ' - ' + current_article.title unless current_article.nil? %></title>
-    <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+    <%= feed_tag :atom, "/feed.xml", title: "Atom Feed" %>
     <link href="/assets/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/pygments/css/default.css" rel="stylesheet">
   </head>
@@ -27,7 +27,7 @@
           <div class="text-right">
             <h4>Netzke Blog</h4>
             <p>Netzke is a framework that provides (and helps building) client-server UI components powered by Sencha Ext JS on the frontend and Ruby on Rails on the server</p>
-            <p><a href="http://feeds.feedburner.com/netzke">RSS</a> | <a href="https://twitter.com/netzke">Twitter</a></p>
+            <p><a href="http://feeds.feedburner.com/netzke-blog">RSS</a> | <a href="https://twitter.com/netzke">Twitter</a></p>
           </div>
         </div>
       </div>

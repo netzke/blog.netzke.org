@@ -1,8 +1,8 @@
 xml.instruct!
 xml.feed "xmlns" => "http://www.w3.org/2005/Atom" do
-  site_url = "http://writelesscode.com/"
-  xml.title "writelesscode"
-  xml.subtitle "Rails, Ext JS, Netzke, and other stuff"
+  site_url = "http://blog.netzke.org/"
+  xml.title "Netzke Blog"
+  xml.subtitle "Client-server web components with Sencha Ext JS and Ruby on Rails"
   xml.id URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, blog.options.prefix.to_s)
   xml.link "href" => URI.join(site_url, current_page.path), "rel" => "self"

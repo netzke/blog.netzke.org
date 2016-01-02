@@ -1,5 +1,6 @@
 <% wrap_layout :layout do %>
   <h2><%= current_article.title %><br><span class="small"><%= current_article.date.strftime("%B %e, %Y") %></span></h2>
   <%= yield %>
+  Do not forget to <a href="http://feeds.feedburner.com/netzke-blog">subscribe via RSS</a>, and follow <a href="http://twitter.com/netzke">@netzke</a> on Twitter for more frequent news.
   <%= disqus %>
 <% end %>
