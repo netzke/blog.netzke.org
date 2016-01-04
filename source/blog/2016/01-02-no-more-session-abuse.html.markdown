@@ -60,11 +60,8 @@ this now:
 ~~~ruby
 component :books do |c|
   # filter books data by author id passed from the client
-  c.scope = lambda {|rel| rel.where(author_id: client_config[:current_author_id])}
+  c.scope = {author_id: client_config[:current_author_id]}
 end
 ~~~
 
-(Note that grid now only accepts a Proc object as scope)
-
 I updated the ["Bosses and Clerks" example](http://edgedemo.netzke.org/#bosses_and_clerks) in the official demo to apply this technique, too.
-
