@@ -64,4 +64,4 @@ component :books do |c|
 end
 ~~~
 
-I updated the ["Bosses and Clerks" example](http://edgedemo.netzke.org/#bosses_and_clerks) in the official demo to apply this technique, too.
+I updated the ["Bosses and Clerks" example](http://demo.netzke.org/#bosses_and_clerks) in the official demo to use this technique, too.
