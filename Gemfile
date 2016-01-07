@@ -12,3 +12,5 @@ gem 'nokogiri'
 gem 'middleman-syntax'
 gem "middleman-disqus"
 gem 'middleman-deploy'
+
+gem 'redcarpet'
