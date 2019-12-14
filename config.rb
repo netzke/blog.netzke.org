@@ -129,8 +129,8 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :rsync
-  deploy.host   = 'blog.netzke.org'
-  deploy.path   = 'www/blog.netzke.org'
+  deploy.host   = '46.101.243.33'
+  deploy.path   = 'web/blog.netzke.org'
 
   # Optional Settings
   deploy.build_before = true
